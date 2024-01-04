@@ -78,7 +78,7 @@ function RandomNumber() {
   
     return maxValue;
   }
-  const numbers = [25, 10, 42, 7, 31];
+  const numbers = [43, 45, 97, 75, 89 ,90];
   const largest = LargestNumber(numbers);
   
 
@@ -94,5 +94,76 @@ function x(num){
 let num = 4935794573
 console.log(x(num))
 
-//24nova
+
+
+//24novb
+
+
+const Array = [1, 2, 3, 4, 5, 6, 7];
+const reverseArray = (arr) => arr.slice().reverse();
+const reversedArray = reverseArray(Array);
+
+console.log("Reversed Array:", reversedArray);
+
+
+//24novc
+
+function countDown(num) {
+  if (num <= 0) {
+    console.log("complete");
+    return;
+  }
+
+  console.log(num);
+  countDown(num - 1);
+}
+
+countDown(7);
+
+//novD
+
+function wish(name, message) {
+  if (name === undefined) {
+    name = "shiv";
+  }
+
+  if (message === undefined) {
+    message = "RAM RAM,";
+  }
+
+  return message + " " + name;
+}
+
+console.log(wish()); 
+
+
+
+function wish(name = "shiv", message = "RAM RAM,") {
+  return message + " " + name;
+} 
+
+console.log(wish("shiv", "namstey,")); 
+
+//27nova
+
+let i = 5
+
+do{
+  console.log(i) 
+  i--;
+}while(i >= 1)  
+
+
+//27novb
+
+function Table(number) {
+  let i = 1;
+
+  do {
+    console.log(`${number} x ${i} = ${number * i}`);
+    i++;
+  } while (i <= 10);
+}
+
+Table(8);
 
