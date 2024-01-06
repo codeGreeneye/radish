@@ -151,7 +151,9 @@ let i = 5
 do{
   console.log(i) 
   i--;
-}while(i >= 1)  
+}
+while(i >= 1)  
+
 
 
 //27novb
@@ -165,5 +167,5 @@ function Table(number) {
   } while (i <= 10);
 }
 
-Table(8);
+Table(7);
 
